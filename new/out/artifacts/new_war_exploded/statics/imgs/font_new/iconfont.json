@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2085033",
+      "name": "发送",
+      "font_class": "fasong",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "4439650",
+      "name": "拒绝",
+      "font_class": "reject",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "5431299",
+      "name": "同意",
+      "font_class": "tongyi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "10150367",
+      "name": "查找",
+      "font_class": "chazhao",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

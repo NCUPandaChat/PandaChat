@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chat.dao.NoticeMapper">
+
+    <!-- 根据用户id查询通知 -->
+    <select id="selectNoticeByUserid" resultType="notice" parameterType="string">
+        select *
+        from chat.notice
+        where toUserid = #{userid, jdbcType=VARCHAR}
+    </select>
+    <!--根据用户id查询通知数量-->
+    <select id="getNoticeNum" resultType="string" parameterType="string">
+        select COUNT(*)
+        from chat.notice
+        where toUserid = #{userid, jdbcType=VARCHAR}
+    </select>
+    <!-- 根据用户id删除通知 -->
+    <delete id="deleteNotice" parameterType="string">
+        delete from chat.notice
+        where fromUserid = #{userid, jdbcType=VARCHAR} and toUserid = #{userid2, jdbcType=VARCHAR}
+    </delete>
+    <!-- 插入通知 -->
+    <insert id="addNotice" parameterType="notice">
+        insert into chat.notice (toUserid,fromUserid,content)
+        VALUES (#{toUserid, jdbcType=VARCHAR}, #{fromUserid, jdbcType=VARCHAR}, #{content, jdbcType=VARCHAR})
+    </insert>
+    <!--判断该消息是否存在-->
+    <select id="selectNotice" parameterType="string" resultType="notice">
+        select *
+        from chat.notice
+        where toUserid=#{toUserid, jdbcType=VARCHAR} and fromUserid=#{fromUserid, jdbcType=VARCHAR}
+    </select>
+</mapper>

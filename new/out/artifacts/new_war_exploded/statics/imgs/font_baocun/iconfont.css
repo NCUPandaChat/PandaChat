@@ -1,0 +1,21 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1608370629481'); /* IE9 */
+  src: url('iconfont.eot?t=1608370629481#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPwAAsAAAAACCQAAAOkAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqEMINLATYCJAMICwYABCAFhG0HLhvvBsgekkTFgwTUAgAAAIkzsM7/CbpKkT6Zty8QJ2k35ixDUrMZaH5gsKUUKCuQ/XspiIi67X03qaQBNgFGWSABJgFo0sGx1E/xPKB3iiyKSnzA59YHi+hl40A2kIH5hrGbCBridiAAQ4A4ZK24e4MqDvQjAHK210SoZmR4QyShIZSKqQV5YKGN8fQSAFP575Mfi2gAZZkAYqod5wocfYugDxtmDkMjigB9Og0AYxbAAHEADmSr1FVRiJxxGMNzFoXAtiIJvFlkmpS22X88gACZAXhWGetHuyY6ZlxqOAUAvFPjHgC3B5kBa4HES9Jl7QH+4QN7ihzYofaGghrNT91ym3OnQrqNoHmLvQ/fDl97t3DhUp8Vd9rKWeug3OvdnXM3EnX4hm5i4kaplYdBbLDuqMfAsf2lKuiw9cJR/nqEiVa7LkVtuJJx61atRdu919/Ovn3ec/bFuhvvxi7cGXDnTu1Z17L27XNbcydhwRLfpTczd193n71749VIbvefv6jhHBDr4THHzW3WLLdZ1H8Y4P66u2O/2WKi51xP5UuHe5Av1U+sOKF9WbEqY9XI9FEZo0r7josPOS8qTEuqOF+Kfyds8wa/+TZ3iO3EP5Facb5x+cQxaVthk8f4Kl76Wjt8XVs7tcnPJvk/flb8LFBaJdZUvltV79uctlXScZ7Vb/npP9X1ZLOiXJ1axSKPuj9acaFRmlH3+PmTfu/fxQX6troevKjOW+Xl1rS4AvPr88gue06spJG1BHnJJiF2ed6sbJOujFpKw9JKsPrT0zOW9NLC3RhT3KlLamkvqHrZNs7pdHe3MIoiAMCcxgnr9k//Bksey69NHXnfNMEBAI/Yh9Mqo5sBoN25nsAfzCoA02xMJpDTujwoBmrPm9BQkCmmESaAycWToSL31+UlNO4vzaDyT4DRhCE5Ng4shDRQaArBEKtytuCqhwJSHUCM0RIQ0lag7I4CI11GcuxjsPDwGRQyDAx14rqkEJH2RmkPEkNSsEWG7WV2VaQM6yLyhbTIFv00k+M+yA8MCyYnJOU9l+SSP8WInrG26BWq2MZnByuk3ci2Gbv5bJIcTtqF4WonMbFN1QNNWrIDdaV8RBQiCtRCBrUnYy6Vlg7VCz//gmgiNpHfUNAj/0B8AaN5lCxBUgfkJc/tVHArV+kpplnoJaRCbfiYA1VIGmJDJ0PdqjuZiCw00W6AfWVHolKsTVfeZHmB83bLAAxATAMTGfjVPCYA') format('woff2'),
+  url('iconfont.woff?t=1608370629481') format('woff'),
+  url('iconfont.ttf?t=1608370629481') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1608370629481#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-save:before {
+  content: "\e69c";
+}
+

@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1608198195657'); /* IE9 */
+  src: url('iconfont.eot?t=1608198195657#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANUAAsAAAAABzAAAAMFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqCLIIwATYCJAMICwYABCAFhG0HPhtkBsgusG3YEygsE84G2yjABTzSPyKo1rCeuw2iQpTxgApYSKLyVB6FjzARLkYB6eRBv/3z+ez+vbvz5UgT6bEL7MXMgmd2ArNo7KJE9VDl9xHq/JaoMEqS/1kPzYDxVeyPe1UzPYDzAcVlrkmh3AcMbw3QWKvdZC1IwbyL7CKuhGWeJlCpwyjK7Ix5y1AjQZMCcehYGmoyKqkmO5QLpcDKhLhHpfLsuPoecBf8fvxFLmogU5ID5a1sTzcx6ZvjOLKv4wrrPBTY4xmgrCPHGEjEBmhaQqLQGKLSClXogXVlB9+8g8da7T8eQZQCZVaDNp51TmzKOdWyDCTn3rkHbnvdRclwdef6lp1X40bXN6XK5RWl0opCYVmxuNzbB/sud6k/ebVbubzy5POXq2524zEbDpRKbH/UzWvcr1y9uv9K1/1Kw6VL0Jhh3+X6EuxJJGR3zWz6PKgar8/13ktPtImjVub7797br2K696Fkv7Ji+amFoeeHvPvIJVLffr6i/nutD79/po4769ljSTXOizP31LWj8HTeobqqk/BVgc73ZouB6v+P5gOP/w0IwKIDe8l8OxnzgeoCQIrs8ZgEFCfJP7L5L/yNjbbL/2rcv5r6CsCXcj5wFCcr0M4C5edqDt45u2VVsrlInSWTDcYyeyrvRVCJvRRAtkbtfWUtNxgL5Vpu01KmPYFcuT50wo9BiSrjUKrcBFQaNXN9lSYCEakWjDjMQaj3EDK1niBX7wM64T9BiVbfoVR9EKi0FZ12rDIQTt1UwTTJTKpvp44RhZxoZV2YvYRZm31NpLkBcQUTieOl2VQmH53JQibGmJNssXJScspFFNAZ3HnM9yMai8hlhkzZUsZj0mkOfVPKiALUmSEwGokxUbrtKIchEuJebamu8PNLMJbNfBpRU9GiXYEREk73VFZKpgV6pihsVXEtr0lsYcmRJI7ihEiAmsEZGB+HIlQMD3MxBinF7hGIjZEWkHhbUWp+SfB066ASkmeB+xE0HzqhF2jh6KNPkJohk42XoAQAAAAA') format('woff2'),
+  url('iconfont.woff?t=1608198195657') format('woff'),
+  url('iconfont.ttf?t=1608198195657') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1608198195657#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont2 {
+  font-family:"iconfont" !important;
+  font-size: 30px;
+  font-style:normal;
+  border: lightpink;
+  background-image: linear-gradient(-90deg, #f2c5ae 0%, #e0b1e0 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkman-contacts_ico:before {
+  content: "\e666";
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff2') format('woff2'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+第二步：定义使用

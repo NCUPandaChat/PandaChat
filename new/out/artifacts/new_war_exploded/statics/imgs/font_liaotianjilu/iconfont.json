@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16852632",
+      "name": "聊天记录",
+      "font_class": "chatRecord",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    }
+  ]
+}

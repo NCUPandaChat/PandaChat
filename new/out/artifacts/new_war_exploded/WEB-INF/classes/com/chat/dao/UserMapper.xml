@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chat.dao.UserMapper">
+    <!--增加用户-->
+    <insert id="addUser" parameterType="user">
+        insert into
+        chat.user (userid,password,nickname,sex,age,profilehead,firsttime,status,email,impression)
+        value
+        (#{userid},#{password},#{nickname},#{sex},#{age},#{profilehead},#{firsttime},#{status},#{email},#{impression})
+    </insert>
+    <!--通过邮箱查找好友并且实现一邮箱只能注册一个用户-->
+    <select id="selectByEmail" parameterType="string" resultType="user" >
+        select * from chat.user where email = #{email};
+    </select>
+    <!--通过nickname查找好友-->
+    <select id="selectByNickName" parameterType="string" resultType="user">
+        select * from chat.user where nickname = #{nickname};
+    </select>
+    <!--通过ID查找用户-->
+    <select id="selectById" parameterType="string" resultType="user">
+        select * from chat.user where userid = #{userid};
+    </select>
+<!--    登录：邮箱型登录判断 User唯一的属性为：邮箱 UUID map中的值为e-mail 和 密码-->
+    <select id="judge_User" parameterType="map" resultType="user">
+        select * from chat.user where userid = #{userid} and password = #{password}
+    </select>
+    <!--更新用户信息-->
+    <update id="update" parameterType="user">
+        UPDATE chat.user
+        <set>
+            <if test="password != null and password != ''">
+                password = #{password, jdbcType=VARCHAR},
+            </if>
+            <if test="nickname != null and nickname != ''">
+                nickname = #{nickname, jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex, jdbcType=INTEGER},
+            </if>
+            <if test="age != null and age != ''">
+                age = #{age, jdbcType=INTEGER},
+            </if>
+            <if test="profilehead != null and profilehead != ''">
+                profilehead = #{profilehead, jdbcType=VARCHAR},
+            </if>
+            <if test="profile != null and profile != ''">
+                profile = #{profile, jdbcType=VARCHAR},
+            </if>
+            <if test="firsttime != null and firsttime != ''">
+                firsttime = #{firsttime, jdbcType=VARCHAR},
+            </if>
+            <if test="lasttime != null and lasttime != ''">
+                lasttime = #{lasttime, jdbcType=VARCHAR},
+            </if>
+            <if test="status != null and status != ''">
+                status = #{status, jdbcType=INTEGER},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email, jdbcType=VARCHAR},
+            </if>
+            <if test="impression!=null and impression !=''">
+                impression=#{impression,jdbcType=VARCHAR},
+            </if>
+        </set>
+        WHERE userid = #{userid, jdbcType=VARCHAR}
+    </update>
+    <!-- 删除用户 -->
+    <delete id="delete" parameterType="string">
+        delete from chat.user
+        where userid = #{userid, jdbcType=VARCHAR}
+    </delete>
+    <!-- 插入朋友关系 -->
+    <insert id="insertFriend" parameterType="String">
+        insert into chat.friendlist (userid,friendid)
+        values (#{userid, jdbcType=VARCHAR}, #{friendid, jdbcType=VARCHAR})
+    </insert>
+    <!-- 删除朋友关系 -->
+    <delete id="deleteFriend" parameterType="String">
+        delete from chat.friendlist
+        where userid = #{userid, jdbcType=VARCHAR} AND friendid = #{friendid, jdbcType=VARCHAR}
+    </delete>
+    <!-- 根据用户id查询所有好友 -->
+    <select id="selectAllFriend" resultType="String" parameterType="string">
+        select  u.userid
+        from chat.user u, chat.friendlist f
+        where u.userid = f.friendid AND f.userid = #{userid}
+        order by firsttime
+    </select>
+    <select id="isFriendShip" parameterType="string" resultType="user">
+        select *
+        from chat.user u, chat.friendlist f
+        where u.userid = f.friendid and f.userid = #{firstID} and u.userid = #{secondID}
+    </select>
+</mapper>

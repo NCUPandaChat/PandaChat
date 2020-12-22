@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15343422",
+      "name": "注销锁屏",
+      "font_class": "zhuxiaosuoping",
+      "unicode": "ef4c",
+      "unicode_decimal": 61260
+    }
+  ]
+}

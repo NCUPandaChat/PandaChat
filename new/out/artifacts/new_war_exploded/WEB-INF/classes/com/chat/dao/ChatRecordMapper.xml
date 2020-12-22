@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.chat.dao.ChatRecordMapper">
+    <insert id="insertChatRecordById" parameterType="chatRecord">
+        INSERT INTO chat.chatrecord (firstperson , secondperson, content , state , time)
+                    VALUES (#{firstperson},#{secondperson},#{content},#{state},#{time})
+    </insert>
+    <select id="searchChatRecord" parameterType="chatRecord" resultType="chatRecord">
+        select * from chat.chatrecord where (firstperson = #{firstperson} and secondperson = #{secondperson}) or
+        (firstperson = #{secondperson} and secondperson = #{firstperson})
+    </select>
+</mapper>

@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1526259",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    }
+  ]
+}

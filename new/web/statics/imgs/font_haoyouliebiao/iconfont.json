@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2119413",
+      "name": "好友列表",
+      "font_class": "linkman-contacts_ico",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    }
+  ]
+}
